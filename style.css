@@ -1,0 +1,353 @@
+*{
+    box-sizing: border-box;
+}
+
+.hide{
+  display: none;
+}
+
+.active{
+  display: show;
+}
+
+
+body{
+  background-image: url(img/background.jpg);
+}
+  .container{
+      width: 100%;
+      padding: 0 50px;
+  }
+  #navBar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  #navLeft{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #navLeft select{
+    padding-left: 8px;
+    width: 53px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #dbdbdb;
+    -webkit-appearance: none;
+    font-size: 14px;
+    color: rgb(0,0,0);
+    font-family: "Gotham";  
+  }
+
+  #navLeft select:focus{
+    outline: none;
+    border: 2px solid #a3a3a3;
+    
+  }
+
+  .navLeftMenu{
+    display: flex;
+    align-items: center;
+  }
+
+  .navLeftMenu:nth-child(3),
+  .navLeftMenu:nth-child(4){
+    display: flex;
+    justify-content: center;
+    width: 155px;
+    height: 38px;
+    border-radius: 19px;
+    border: 2px solid transparent;
+  }
+
+  .navLeftMenu:nth-child(3):hover,
+  .navLeftMenu:nth-child(4):hover{
+    width: 155px;
+    height: 38px;
+    border-radius: 19px;
+    border: 2px solid #a3016f;
+    box-shadow: 2px 2px 2px #dbdbdb;
+  }
+
+  .navLeftMenu a{
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(0,0,0);
+    font-family: "Gotham";
+    font-weight: bold;
+  }
+
+  .navSearch i{
+    font-size: 24px;
+    color: rgb(164,1,111);
+  }
+
+  #navRight{
+    width: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  #navRight div{
+    margin-left: 66px;
+  }
+
+  #kabinet{
+    font-size: 14px;
+    color: rgb(255,255,255);
+    font-family: "Gotham";
+    font-weight: bold;
+  }
+
+  #kabinet i{
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  #slider{
+    display: flex;
+    margin-left: 200px;
+    position: relative;
+  }
+
+  .slideContent h4{
+    margin-top:200px;
+    font-size: 16px;
+    color: rgb(0,0,0);
+    font-family: "Gotham";
+    font-weight: bold;
+    position: relative;
+  }
+
+  .slideContent h4::after{
+    left: 0;
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    width: 140px;
+    height: 3px;
+    background-color: #fdb92d;
+  }
+
+  .slideContent .yellowH1{
+    font-size: 57px;
+    line-height: 81px;
+    color: rgb(253,185,45);
+    font-family: "Gotham";
+    margin-top: 50px;
+  }
+
+  .slideContent .purpleH1{
+    font-size: 57px;
+    line-height: 81px;
+    color: rgb(163, 1, 111);
+    font-family: "Gotham";
+  }
+
+  .slideContent span{
+    font-weight: 800;
+  }
+
+  .slideContent p{
+    width: 470px;
+    height: 57px;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(0,0,0);
+    font-family: "Calibri";
+    margin-top: 50px;
+  }
+
+  .buttons{
+    display: flex;
+  }
+
+  slideContent .buttons{
+    display: flex;
+  }
+  
+  .buttons .button{
+    width: 275px;
+    height: 60px;
+    border-radius: 30px;
+    border: 2px solid #fdb92d;
+    font-size: 16px;
+    color: rgb(0,0,0);
+    font-family: "Gotham";
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+    margin: 55px 35px 0 0;
+  }
+  
+  .buttons .button:hover{
+    background-color: #fdb92d;
+  }
+
+  #slider .ellipseDotted{
+    width: 202px;
+    height: 202px;
+    border-radius: 101px;
+    border: 2px dashed #ababab;
+    position: absolute;
+    left: -330px;
+    top: 320px;
+    right: 150px;
+  }
+
+  #slider .ellipseDotted .ellipsePurple{
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+    background-color: #a3016f;
+    font-size: 14px;
+    color: rgb(255,255,255);
+    font-family: "Font Awesome";
+    
+  }
+
+  #slider .ellipseDotted .ellipseCar{
+    position: absolute;
+    right: -20px;
+    top: 80px;
+  }
+
+  #slider .ellipseDotted .ellipseHome{
+    position: absolute;
+    top: -20px;
+    right: 80px;
+  }
+
+  #slider .ellipseDotted .ellipseHome .fa-home{
+    transform: rotate(-90deg);
+  }
+
+  #slider .ellipseDotted .ellipsePlane{
+    position: absolute;
+    left: -20px;
+    top: 80px;
+}
+
+#slider .ellipseDotted .ellipsePlane .fa-plane{
+  transform: rotate(-180deg);
+}
+
+  #slider .ellipseDotted .ellipseCar .fa,
+  #slider .ellipseDotted .ellipseHome .fa,
+  #slider .ellipseDotted .ellipsePlane .fa{
+    position: absolute;
+    left: 14px;
+    top: 14px;
+  }
+
+  #slider .ellipseDotted i{
+    position: absolute;
+    left: 140px;
+  }
+
+  #slider .fa-angle-left{
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 450px;
+    left: -180px;
+  }
+
+  #slider .fa-angle-left:hover{
+    transform: rotate(-45deg) scale(2);
+
+  }
+
+  #slider .fa-angle-right{
+    position: absolute;
+    transform: rotate(225deg);
+    top: 385px;
+    left: -180px;
+    color: #a3016f;
+  }
+
+  #slider .fa-angle-right:hover{
+    transform: rotate(225deg) scale(2);
+  }
+
+  footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 210px
+  }
+
+  footer .about{
+    display: flex;
+  }
+
+  footer .about .aboutItems{
+    height: 24px;
+    margin-right: 35px;
+    font-size: 16px;
+    color: rgb(0,0,0);
+    font-family: "Gotham";
+    font-weight: bold;
+    padding-bottom: 13px;
+    border-bottom: 2px solid transparent;
+
+  }
+
+  footer .about .aboutItems:hover{
+    border-bottom: 2px solid #fdb92d;
+  }
+
+  footer .about .phone{
+    margin-left: 30px;
+    font-size: 22px;
+    font-family: "Gotham";
+    font-weight: 800;
+
+  }
+
+  footer .about .phone span{
+    margin-left: 8px;
+    font-size: 20px;
+    font-family: "Gotham";
+    font-weight: 800;
+    vertical-align: text-top;
+  }
+
+  footer .about .phone i{
+    color: #a3016f;
+  }
+
+  .copywrite{
+    font-size: 14px;
+    color: rgb(102,102,102);
+    font-family: "Calibri";
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 45px;
+  }
+
+  .copywrite span{
+    color:#1c5aae;
+    font-weight: bold;
+  }
+
+  footer .sosialLogos{
+    display: flex;
+    align-items: center;
+  }
+
+  footer .sosialLogos > i{
+    margin-right: 20px;
+    font-size: 18px;
+    color: rgb(164,1,111);
+  }
+
+  footer .sosialLogos img{
+    margin-left: 25px;
+  }
